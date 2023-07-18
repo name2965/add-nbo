@@ -20,7 +20,7 @@ uint32_t func(char* file_name){
 	FILE* fp;
         if((fp = fopen(file_name,"rb")) == NULL){
                 printf("[X] open error\n");
-                return -2;
+                exit(-2);
         }
 	uint32_t buffer[2];
 	uint32_t ret;
